@@ -25,7 +25,7 @@
                                 </state>
                                 <connections>
                                     <action selector="changeScreens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QFf-5w-qXU"/>
-                                    <segue destination="FWM-aS-ct8" kind="show" identifier="toPdatedScreenFromMain" id="jSe-GF-csy"/>
+                                    <segue destination="FWM-aS-ct8" kind="show" identifier="toUpdatedFromMain" id="jSe-GF-csy"/>
                                 </connections>
                             </button>
                         </subviews>
