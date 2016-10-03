@@ -22,4 +22,10 @@ class UpdatedViewController : UIViewController
         //then loads classes components.
         bottomImg.image = UIImage (named : "Return")
     }
+    
+    
+    @IBAction func anotherPage(sender: UIButton)
+    {
+        performSegueWithIdentifier("toThirdPageFromUpdated", sender: sender)
+    }
 }

@@ -11,7 +11,10 @@ import UIKit
 class ViewController: UIViewController
 {
 
-    override func viewDidLoad() {
+    @IBOutlet private weak var quesarPicture: UIImageView!
+   
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
