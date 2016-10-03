@@ -34,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="271" y="359"/>
+            <point key="canvasLocation" x="-32" y="302"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="heo-1Q-1B9">
@@ -52,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpO-OL-C6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="580" y="998"/>
+            <point key="canvasLocation" x="1440" y="302"/>
         </scene>
         <!--Updated View Controller-->
         <scene sceneID="Cpb-OR-7FO">
@@ -65,12 +65,27 @@
                     <view key="view" contentMode="scaleToFill" id="zIw-90-PX5" colorLabel="IBBuiltInLabel-Yellow">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Q-Vr-vCP">
+                                <rect key="frame" x="175" y="332" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Make it right" translatesAutoresizingMaskIntoConstraints="NO" id="Dfs-il-RE6">
+                                <rect key="frame" x="102" y="89" width="397" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.17017973080000001" blue="0.1092272584" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomImg" destination="Z3Q-Vr-vCP" id="bFZ-yy-vL6"/>
+                        <outlet property="topImage" destination="Dfs-il-RE6" id="vmF-0H-Xdo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRv-Lb-Yxt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934" y="359"/>
+            <point key="canvasLocation" x="686" y="302"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Make it right" width="546" height="185"/>
+    </resources>
 </document>
