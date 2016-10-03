@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class pdatedViewController : UIViewController
+class UpdatedViewController : UIViewController
 {
     
 }

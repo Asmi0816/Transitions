@@ -24,7 +24,8 @@
                                     <color key="titleColor" red="1" green="0.17017973080000001" blue="0.1092272584" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FWM-aS-ct8" kind="show" identifier="toPdatedScreen" id="jSe-GF-csy"/>
+                                    <action selector="changeScreens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QFf-5w-qXU"/>
+                                    <segue destination="FWM-aS-ct8" kind="show" identifier="toPdatedScreenFromMain" id="jSe-GF-csy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="580" y="998"/>
         </scene>
-        <!--Pdated View Controller-->
+        <!--Updated View Controller-->
         <scene sceneID="Cpb-OR-7FO">
             <objects>
-                <viewController id="FWM-aS-ct8" customClass="pdatedViewController" customModule="Transitions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FWM-aS-ct8" customClass="UpdatedViewController" customModule="Transitions" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cC4-wY-xOh"/>
                         <viewControllerLayoutGuide type="bottom" id="5kC-eh-Ffk"/>
