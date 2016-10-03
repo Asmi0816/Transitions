@@ -60,21 +60,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JFG-Qd-x4M">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vat19" translatesAutoresizingMaskIntoConstraints="NO" id="JFG-Qd-x4M">
                                 <rect key="frame" x="47" y="71" width="240" height="128"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mdi-OY-w89">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tramps" translatesAutoresizingMaskIntoConstraints="NO" id="Mdi-OY-w89">
                                 <rect key="frame" x="47" y="220" width="240" height="128"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kc6-KJ-DO0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lab" translatesAutoresizingMaskIntoConstraints="NO" id="Kc6-KJ-DO0">
                                 <rect key="frame" x="47" y="370" width="240" height="128"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x29-pR-vj0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="random" translatesAutoresizingMaskIntoConstraints="NO" id="x29-pR-vj0">
                                 <rect key="frame" x="319" y="71" width="240" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DR-Mo-Vye">
                                 <rect key="frame" x="319" y="207" width="256" height="225"/>
-                                <string key="text">These are pictures of random things I think are very cool. The top left ia a giant soccerball filled with helium. the one below is a awesome trampoline play ground. the one below that is a picture of a dog that looks like mine. and the top right is a picture of another thing.</string>
+                                <string key="text">These are pictures of random things I think are very cool. The top left is a giant soccerball filled with helium. The one below is a awesome trampoline play ground. The one below that is a picture of a dog that looks like mine. And the top right is a picture of another thing.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -85,14 +85,42 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="continuingButton:" destination="2qE-tJ-F8b" eventType="touchUpInside" id="IPn-gM-Uxg"/>
+                                    <segue destination="JuK-pk-pFV" kind="show" identifier="toFourthFromThird" id="rzp-wH-nZH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="giantBall" destination="JFG-Qd-x4M" id="dzz-CS-WRD"/>
+                        <outlet property="lab" destination="Kc6-KJ-DO0" id="yG0-pC-aeR"/>
+                        <outlet property="randomTitle" destination="x29-pR-vj0" id="fCd-Ru-vZX"/>
+                        <outlet property="trampPlace" destination="Mdi-OY-w89" id="aoK-VD-Xqg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpO-OL-C6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1440" y="302"/>
+        </scene>
+        <!--Fourth Page-->
+        <scene sceneID="Tnw-d6-OKV">
+            <objects>
+                <viewController id="JuK-pk-pFV" customClass="FourthPage" customModule="Transitions" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UKL-Ac-Pnb"/>
+                        <viewControllerLayoutGuide type="bottom" id="y6F-HC-MUd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IXU-CX-9cR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKL-yn-g4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2270" y="302"/>
         </scene>
         <!--Updated View Controller-->
         <scene sceneID="Cpb-OR-7FO">
@@ -144,5 +172,9 @@
     <resources>
         <image name="Make it right" width="546" height="185"/>
         <image name="Quasar" width="3500" height="1830"/>
+        <image name="Tramps" width="1920" height="1080"/>
+        <image name="Vat19" width="275" height="183"/>
+        <image name="lab" width="800" height="600"/>
+        <image name="random" width="500" height="500"/>
     </resources>
 </document>

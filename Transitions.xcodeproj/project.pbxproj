@@ -14,6 +14,7 @@
 		F3ACC5BD1DA2CE25008BFEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3ACC5BB1DA2CE25008BFEFD /* LaunchScreen.storyboard */; };
 		F3ACC5C91DA2D49D008BFEFD /* UpdatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACC5C81DA2D49D008BFEFD /* UpdatedViewController.swift */; };
 		F3ACC5CB1DA2E0E0008BFEFD /* ThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACC5CA1DA2E0E0008BFEFD /* ThirdPage.swift */; };
+		F3ACC5CD1DA2E78B008BFEFD /* FourthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACC5CC1DA2E78B008BFEFD /* FourthPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F3ACC5BE1DA2CE25008BFEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3ACC5C81DA2D49D008BFEFD /* UpdatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpdatedViewController.swift; path = Controller/UpdatedViewController.swift; sourceTree = "<group>"; };
 		F3ACC5CA1DA2E0E0008BFEFD /* ThirdPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdPage.swift; path = Controller/ThirdPage.swift; sourceTree = "<group>"; };
+		F3ACC5CC1DA2E78B008BFEFD /* FourthPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourthPage.swift; path = Controller/FourthPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				F3ACC5BE1DA2CE25008BFEFD /* Info.plist */,
 				F3ACC5C81DA2D49D008BFEFD /* UpdatedViewController.swift */,
 				F3ACC5CA1DA2E0E0008BFEFD /* ThirdPage.swift */,
+				F3ACC5CC1DA2E78B008BFEFD /* FourthPage.swift */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				F3ACC5C91DA2D49D008BFEFD /* UpdatedViewController.swift in Sources */,
 				F3ACC5CB1DA2E0E0008BFEFD /* ThirdPage.swift in Sources */,
 				F3ACC5B31DA2CE25008BFEFD /* AppDelegate.swift in Sources */,
+				F3ACC5CD1DA2E78B008BFEFD /* FourthPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

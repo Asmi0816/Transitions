@@ -11,4 +11,18 @@ import UIKit
 class ThirdPage : UIViewController
 {
     
+    @IBOutlet private weak var giantBall: UIImageView!
+    
+    @IBOutlet private weak var trampPlace: UIImageView!
+    
+    
+    @IBOutlet private weak var lab: UIImageView!
+    
+    @IBOutlet private weak var randomTitle: UIImageView!
+    
+    
+    @IBAction func continuingButton(sender: UIButton)
+    {
+        performSegueWithIdentifier("toFourthFromThird", sender: sender)
+    }
 }
