@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3619E8A1DA5713E00ABF4AB /* LastPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3619E891DA5713E00ABF4AB /* LastPage.swift */; };
 		F3ACC5B31DA2CE25008BFEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACC5B21DA2CE25008BFEFD /* AppDelegate.swift */; };
 		F3ACC5B51DA2CE25008BFEFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACC5B41DA2CE25008BFEFD /* ViewController.swift */; };
 		F3ACC5B81DA2CE25008BFEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3ACC5B61DA2CE25008BFEFD /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3619E891DA5713E00ABF4AB /* LastPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LastPage.swift; path = Controller/LastPage.swift; sourceTree = "<group>"; };
 		F3ACC5AF1DA2CE25008BFEFD /* Transitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3ACC5B21DA2CE25008BFEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3ACC5B41DA2CE25008BFEFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				F3ACC5C81DA2D49D008BFEFD /* UpdatedViewController.swift */,
 				F3ACC5CA1DA2E0E0008BFEFD /* ThirdPage.swift */,
 				F3ACC5CC1DA2E78B008BFEFD /* FourthPage.swift */,
+				F3619E891DA5713E00ABF4AB /* LastPage.swift */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				F3ACC5B51DA2CE25008BFEFD /* ViewController.swift in Sources */,
 				F3ACC5C91DA2D49D008BFEFD /* UpdatedViewController.swift in Sources */,
+				F3619E8A1DA5713E00ABF4AB /* LastPage.swift in Sources */,
 				F3ACC5CB1DA2E0E0008BFEFD /* ThirdPage.swift in Sources */,
 				F3ACC5B31DA2CE25008BFEFD /* AppDelegate.swift in Sources */,
 				F3ACC5CD1DA2E78B008BFEFD /* FourthPage.swift in Sources */,
@@ -302,6 +306,7 @@
 				F3ACC5C31DA2CE25008BFEFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

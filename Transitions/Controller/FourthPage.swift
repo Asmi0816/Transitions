@@ -11,4 +11,19 @@ import UIKit
 class FourthPage : UIViewController
 {
     
+    @IBOutlet private weak var lukePicture: UIImageView!
+    
+    @IBOutlet private weak var seanPicture: UIImageView!
+    
+    @IBOutlet private weak var marcPicture: UIImageView!
+    
+    
+    
+    @IBAction func fullButton(sender: UIButton)
+    {
+        performSegueWithIdentifier("toLastFromFourth", sender: sender)
+    }
+    
+    
+    
 }
