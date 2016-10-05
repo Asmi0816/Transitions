@@ -12,15 +12,12 @@ class LastPage : UIViewController
 {
     @IBOutlet private weak var finishLabel: UILabel!
     
-    @IBOutlet private weak var finalPicture: UIImageView!
-    
+   
     @IBOutlet private weak var presented: UILabel!
-    
-    @IBOutlet private weak var `for`: UILabel!
     
     @IBOutlet private weak var today: UILabel!
     
-    @IBOutlet weak var signed: UILabel!
+    @IBOutlet private weak var signed: UILabel!
     
     
     

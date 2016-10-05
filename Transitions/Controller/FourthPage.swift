@@ -18,12 +18,13 @@ class FourthPage : UIViewController
     @IBOutlet private weak var marcPicture: UIImageView!
     
     
-    
-    @IBAction func fullButton(sender: UIButton)
+  
+    @IBAction func greatButton(sender: UIButton)
     {
         performSegueWithIdentifier("toLastFromFourth", sender: sender)
     }
     
+  
     
     
 }
