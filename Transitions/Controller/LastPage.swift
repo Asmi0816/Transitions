@@ -19,7 +19,13 @@ class LastPage : UIViewController
     
     @IBOutlet private weak var signed: UILabel!
     
+    @IBOutlet private weak var Congrats: UIImageView!
     
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+       
+    }
     
     @IBAction func finalButton(sender: UIButton)
     

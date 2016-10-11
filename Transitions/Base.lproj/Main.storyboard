@@ -260,11 +260,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ty-OU-9e3">
+                                <rect key="frame" x="20" y="276" width="137" height="119"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbO-jc-Fmq">
+                                <rect key="frame" x="437" y="276" width="138" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="angryBirds" destination="rbO-jc-Fmq" id="Ld9-0U-L9L"/>
                         <outlet property="bottomImg" destination="Z3Q-Vr-vCP" id="bFZ-yy-vL6"/>
+                        <outlet property="jelly" destination="9Ty-OU-9e3" id="wxQ-47-JDS"/>
                         <outlet property="topImage" destination="Dfs-il-RE6" id="vmF-0H-Xdo"/>
                     </connections>
                 </viewController>

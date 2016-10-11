@@ -9,11 +9,15 @@
 import UIKit
 class UpdatedViewController : UIViewController
 {
-    @IBOutlet private weak var topImage:
-    UIImageView!
+    @IBOutlet private weak var topImage: UIImageView!
     
-    @IBOutlet private weak var bottomImg:
-    UIImageView!
+    @IBOutlet private weak var bottomImg: UIImageView!
+    
+    @IBOutlet private weak var jelly: UIImageView!
+    
+    @IBOutlet private weak var angryBirds: UIImageView!
+    
+    
     
     override func viewDidLoad()
     {
@@ -21,8 +25,12 @@ class UpdatedViewController : UIViewController
         super.viewDidLoad()
         //then loads classes components.
         bottomImg.image = UIImage (named : "Return")
+        jelly.image = UIImage (named: "Jelly")
+        angryBirds.image = UIImage (named: "AngeryBirds")
+        
     }
     
+   
     
     @IBAction func anotherPage(sender: UIButton)
     {
