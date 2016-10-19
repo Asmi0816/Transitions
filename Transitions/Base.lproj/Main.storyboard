@@ -18,50 +18,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quasar" translatesAutoresizingMaskIntoConstraints="NO" id="Dx6-jb-tWl">
-                                <rect key="frame" x="101" y="420" width="398" height="144"/>
-                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
-                                    <rect key="frame" x="101" y="350" width="198" height="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This Is my About me app in Xcode and It is a step towards acctually making an app with real pupose." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPR-wY-Htw">
+                                <rect key="frame" x="90" y="10" width="420" height="97"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="190" y="14" width="420" height="97"/>
                                 </variation>
-                            </imageView>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="57" y="90" width="289" height="187"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ3-ub-uFe">
-                                <rect key="frame" x="239" y="270" width="123" height="30"/>
+                                <rect key="frame" x="70" y="162" width="460" height="135"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Fun times for all!!!">
                                     <color key="titleColor" red="1" green="0.17017973080000001" blue="0.1092272584" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="274" y="119" width="253" height="67"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="139" y="285" width="123" height="100"/>
+                                    <rect key="frame" x="140" y="270" width="123" height="100"/>
                                 </variation>
                                 <connections>
                                     <action selector="changeScreens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QFf-5w-qXU"/>
                                     <segue destination="FWM-aS-ct8" kind="show" identifier="toUpdatedFromMain" id="jSe-GF-csy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This Is my About me app in Xcode and It is a step towards acctually making an app with real pupose." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPR-wY-Htw">
-                                <rect key="frame" x="159" y="37" width="282" height="187"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="159" y="90" width="82" height="187"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Quasar" translatesAutoresizingMaskIntoConstraints="NO" id="Dx6-jb-tWl">
+                                <rect key="frame" x="101" y="335" width="398" height="144"/>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="101" y="350" width="198" height="14"/>
                                 </variation>
-                            </label>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="272" y="209" width="255" height="133"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Dx6-jb-tWl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="400" id="1AV-Oz-Gb6"/>
+                            <constraint firstItem="Dx6-jb-tWl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="300" id="1AV-Oz-Gb6"/>
+                            <constraint firstItem="HPR-wY-Htw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="170" id="33V-nG-RSK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dx6-jb-tWl" secondAttribute="trailing" constant="81" id="58Z-zc-UFC"/>
-                            <constraint firstItem="HPR-wY-Htw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="Emd-vn-dMQ"/>
+                            <constraint firstItem="HPR-wY-Htw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="6jg-5T-MFn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HPR-wY-Htw" secondAttribute="trailing" constant="170" id="ELd-8z-Rnm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dx6-jb-tWl" secondAttribute="bottom" constant="36" id="J3M-hE-N2m"/>
                             <constraint firstItem="Dx6-jb-tWl" firstAttribute="top" secondItem="qJ3-ub-uFe" secondAttribute="bottom" constant="35" id="LVk-Dc-HCI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qJ3-ub-uFe" secondAttribute="trailing" constant="50" id="Nd3-r4-kHM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HPR-wY-Htw" secondAttribute="trailing" constant="70" id="dNt-Pb-p73"/>
-                            <constraint firstItem="qJ3-ub-uFe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="230" id="dpW-4R-ltB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HPR-wY-Htw" secondAttribute="trailing" constant="34" id="Pab-hv-9vm"/>
+                            <constraint firstItem="HPR-wY-Htw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="W3u-xX-kGJ"/>
+                            <constraint firstItem="qJ3-ub-uFe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="160" id="dpW-4R-ltB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HPR-wY-Htw" secondAttribute="trailing" constant="70" id="m95-mt-CgH"/>
                             <constraint firstItem="Dx6-jb-tWl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="81" id="rfD-E6-V66"/>
-                            <constraint firstItem="HPR-wY-Htw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="xFq-Qa-V6P"/>
+                            <constraint firstItem="HPR-wY-Htw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xFq-Qa-V6P"/>
                             <constraint firstItem="qJ3-ub-uFe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="xW4-zE-9eH"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="33V-nG-RSK"/>
+                                <exclude reference="6jg-5T-MFn"/>
+                                <exclude reference="ELd-8z-Rnm"/>
+                                <exclude reference="Pab-hv-9vm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="33V-nG-RSK"/>
+                                <include reference="ELd-8z-Rnm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="6jg-5T-MFn"/>
+                                <include reference="Pab-hv-9vm"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="quesarPicture" destination="Dx6-jb-tWl" id="KUb-9s-M5M"/>
@@ -69,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6" y="302"/>
+            <point key="canvasLocation" x="-6" y="301.5"/>
         </scene>
         <!--Third Page-->
         <scene sceneID="heo-1Q-1B9">
@@ -261,11 +294,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Make it right" translatesAutoresizingMaskIntoConstraints="NO" id="Dfs-il-RE6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Make it right" translatesAutoresizingMaskIntoConstraints="NO" id="Dfs-il-RE6">
                                 <rect key="frame" x="97" y="140" width="397" height="128"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Q-Vr-vCP">
-                                <rect key="frame" x="175" y="332" width="240" height="128"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OO-eR-vNz">
                                 <rect key="frame" x="227" y="276" width="146" height="30"/>
@@ -277,23 +307,36 @@
                                     <segue destination="2qE-tJ-F8b" kind="show" identifier="toThirdPageFromUpdated" id="8wt-jt-5DJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I really love to code ever sence I bassically played a video game and heard it  was a possible thing to do I wanted to code." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYN-te-Ur1">
-                                <rect key="frame" x="94" y="56" width="402" height="86"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ty-OU-9e3">
                                 <rect key="frame" x="20" y="276" width="137" height="119"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbO-jc-Fmq">
                                 <rect key="frame" x="437" y="276" width="138" height="128"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I really love to code ever sence I bassically played a video game and heard it  was a possible thing to do I wanted to code." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYN-te-Ur1">
+                                <rect key="frame" x="94" y="10" width="402" height="122"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="94" y="-64" width="202" height="280"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Q-Vr-vCP">
+                                <rect key="frame" x="170" y="330" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Dfs-il-RE6" firstAttribute="leading" secondItem="zIw-90-PX5" secondAttribute="leadingMargin" constant="77" id="2Qn-GL-TXS"/>
+                            <constraint firstItem="Dfs-il-RE6" firstAttribute="top" secondItem="cC4-wY-xOh" secondAttribute="bottom" constant="120" id="NrR-n7-qOJ"/>
+                            <constraint firstItem="5kC-eh-Ffk" firstAttribute="top" secondItem="Dfs-il-RE6" secondAttribute="bottom" constant="332" id="PX0-xM-Cg6"/>
                             <constraint firstItem="5kC-eh-Ffk" firstAttribute="top" secondItem="Z3Q-Vr-vCP" secondAttribute="bottom" constant="140" id="W5S-fb-cfg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dfs-il-RE6" secondAttribute="trailing" constant="86" id="eDt-bW-Nvt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zYN-te-Ur1" secondAttribute="trailing" constant="84" id="gAw-cx-Kj6"/>
+                            <constraint firstItem="zYN-te-Ur1" firstAttribute="top" secondItem="cC4-wY-xOh" secondAttribute="bottom" id="hVF-RA-wTj"/>
                             <constraint firstItem="Z3Q-Vr-vCP" firstAttribute="top" secondItem="1OO-eR-vNz" secondAttribute="bottom" constant="26" id="tdi-Ki-EfY"/>
+                            <constraint firstItem="zYN-te-Ur1" firstAttribute="leading" secondItem="zIw-90-PX5" secondAttribute="leadingMargin" constant="74" id="zY8-Yu-FYP"/>
                         </constraints>
                     </view>
                     <connections>
