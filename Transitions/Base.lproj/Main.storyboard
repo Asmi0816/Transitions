@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,28 +18,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ3-ub-uFe">
-                                <rect key="frame" x="148" y="285" width="123" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quasar" translatesAutoresizingMaskIntoConstraints="NO" id="Dx6-jb-tWl">
+                                <rect key="frame" x="101" y="420" width="398" height="144"/>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="101" y="350" width="198" height="14"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ3-ub-uFe">
+                                <rect key="frame" x="239" y="270" width="123" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Fun times for all!!!">
                                     <color key="titleColor" red="1" green="0.17017973080000001" blue="0.1092272584" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="139" y="285" width="123" height="100"/>
+                                </variation>
                                 <connections>
                                     <action selector="changeScreens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QFf-5w-qXU"/>
                                     <segue destination="FWM-aS-ct8" kind="show" identifier="toUpdatedFromMain" id="jSe-GF-csy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This Is my About me app in Xcode and It is a step towards acctually making an app with real pupose." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPR-wY-Htw">
-                                <rect key="frame" x="85" y="99" width="282" height="187"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This Is my About me app in Xcode and It is a step towards acctually making an app with real pupose." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPR-wY-Htw">
+                                <rect key="frame" x="159" y="37" width="282" height="187"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="159" y="90" width="82" height="187"/>
+                                </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Quasar" translatesAutoresizingMaskIntoConstraints="NO" id="Dx6-jb-tWl">
-                                <rect key="frame" x="37" y="313" width="398" height="214"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dx6-jb-tWl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="400" id="1AV-Oz-Gb6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dx6-jb-tWl" secondAttribute="trailing" constant="81" id="58Z-zc-UFC"/>
+                            <constraint firstItem="HPR-wY-Htw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="Emd-vn-dMQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dx6-jb-tWl" secondAttribute="bottom" constant="36" id="J3M-hE-N2m"/>
+                            <constraint firstItem="Dx6-jb-tWl" firstAttribute="top" secondItem="qJ3-ub-uFe" secondAttribute="bottom" constant="35" id="LVk-Dc-HCI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qJ3-ub-uFe" secondAttribute="trailing" constant="50" id="Nd3-r4-kHM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HPR-wY-Htw" secondAttribute="trailing" constant="70" id="dNt-Pb-p73"/>
+                            <constraint firstItem="qJ3-ub-uFe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="230" id="dpW-4R-ltB"/>
+                            <constraint firstItem="Dx6-jb-tWl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="81" id="rfD-E6-V66"/>
+                            <constraint firstItem="HPR-wY-Htw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="xFq-Qa-V6P"/>
+                            <constraint firstItem="qJ3-ub-uFe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="xW4-zE-9eH"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="quesarPicture" destination="Dx6-jb-tWl" id="KUb-9s-M5M"/>
@@ -124,10 +147,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20160801_160649" translatesAutoresizingMaskIntoConstraints="NO" id="0dy-Wl-VKU">
-                                <rect key="frame" x="42" y="270" width="175" height="178"/>
+                                <rect key="frame" x="20" y="275" width="175" height="178"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20160930_144332" translatesAutoresizingMaskIntoConstraints="NO" id="nxt-Q9-qQj">
-                                <rect key="frame" x="400" y="270" width="170" height="178"/>
+                                <rect key="frame" x="410" y="270" width="170" height="178"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8O-G6-sdL">
                                 <rect key="frame" x="76" y="504" width="141" height="76"/>
@@ -141,7 +164,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20160812_194328" translatesAutoresizingMaskIntoConstraints="NO" id="V0U-hg-m6c">
-                                <rect key="frame" x="224" y="270" width="168" height="178"/>
+                                <rect key="frame" x="216" y="270" width="168" height="178"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -241,10 +264,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Make it right" translatesAutoresizingMaskIntoConstraints="NO" id="Dfs-il-RE6">
                                 <rect key="frame" x="97" y="140" width="397" height="128"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Q-Vr-vCP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Q-Vr-vCP">
                                 <rect key="frame" x="175" y="332" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OO-eR-vNz">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OO-eR-vNz">
                                 <rect key="frame" x="227" y="276" width="146" height="30"/>
                                 <state key="normal" title="Third Page of Fun XD">
                                     <color key="titleColor" red="0.50196081399917603" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -268,6 +291,10 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5kC-eh-Ffk" firstAttribute="top" secondItem="Z3Q-Vr-vCP" secondAttribute="bottom" constant="140" id="W5S-fb-cfg"/>
+                            <constraint firstItem="Z3Q-Vr-vCP" firstAttribute="top" secondItem="1OO-eR-vNz" secondAttribute="bottom" constant="26" id="tdi-Ki-EfY"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="angryBirds" destination="rbO-jc-Fmq" id="Ld9-0U-L9L"/>
